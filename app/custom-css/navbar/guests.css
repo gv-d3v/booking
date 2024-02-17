@@ -1,0 +1,62 @@
+.dropdown-menu.destination.guests ul {
+  padding: 10px 5px;
+}
+
+.dropdown-menu.destination.guests ul li {
+  display: flex;
+}
+.dropdown-menu.destination.guests ul li:hover {
+  background: none;
+}
+
+.guests-label{
+    margin-right: 20px;
+}
+
+.dropdown-menu.destination.guests span {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.dropdown-menu.destination.guests button {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+}
+
+.dropdown-menu.destination.guests button:hover {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.guest-decrement {
+  padding: 3px;
+  margin: 0 5px !important;
+  margin-left: auto !important;
+}
+
+.guest-decrement svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.guest-increment {
+  padding: 3px;
+  margin: 0 5px !important;
+}
+
+.guest-increment svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.guest-decrement.disabled {
+  color: rgba(0, 0, 0, 0.2);
+  fill:  rgba(0, 0, 0, 0.2);
+  pointer-events: none !important;
+  cursor: none;
+}
+
+.guests-number{
+  margin: auto 5px;
+}

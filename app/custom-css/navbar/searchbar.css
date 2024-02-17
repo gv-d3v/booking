@@ -1,0 +1,47 @@
+@import "./destination.css";
+@import "./calendar.css";
+@import "./guests.css";
+@import "./sideMenu.css";
+
+.search-bar {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.search-bar input {
+  width: 150px;
+  text-align: center;
+}
+
+.search-bar input:focus,
+.search-bar input:focus-visible {
+  box-shadow: none;
+  border: none;
+  outline: none;
+  caret-color: black;
+}
+
+.search-bar input:nth-child(-n + 2) {
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.search-icon {
+  background-color: rgba(255, 182, 85, 1);
+  border-radius: 100%;
+  padding: 1px;
+  transition: scale 0.1s ease;
+}
+
+.search-icon:hover {
+  scale: 1.2;
+}
+
+.search-icon svg {
+  display: inherit;
+  padding: 3px;
+  fill: rgba(0, 0, 0, 0.8);
+}

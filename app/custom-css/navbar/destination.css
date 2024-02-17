@@ -1,0 +1,45 @@
+.dropdown-menu.destination {
+    right: auto;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 0;
+  }
+  
+  .dropdown-menu.destination svg {
+    width: 700px;
+    height: 400px;
+  }
+  
+  .whole-map {
+    fill: rgba(100, 100, 100, 0.5);
+  }
+  
+  .geography:hover {
+    fill: rgba(255, 182, 85, 1);
+    cursor: pointer;
+  }
+  .geography.active {
+    fill: rgba(255, 182, 85, 1);
+    cursor: pointer;
+  }
+  
+  .marker-text {
+    fill: black;
+    pointer-events: none;
+    font-size: 30px;
+    stroke: none;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  
+  .country-ul {
+    padding: 5px;
+  }
+  
+  .dropdown-menu.destination.list {
+    width: 150px;
+    max-height: 500px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+  }
+  
