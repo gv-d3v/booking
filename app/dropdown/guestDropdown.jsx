@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import MinusIconSVG from "../custom-css/icons/minusIconSVG";
 import PlusIconSVG from "../custom-css/icons/plusIconSVG";
 
-const GuestDropdown = ({ showGuestDrop, guestRef, popupLeft, adults, setAdults, children, setChildren, pets, setPets }) => {
+const GuestDropdown = ({ showGuestDrop, guestRef, popupLeft, adults, setAdults, guestChildren, setGuestChildren, pets, setPets }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -52,18 +52,18 @@ const GuestDropdown = ({ showGuestDrop, guestRef, popupLeft, adults, setAdults, 
             <li className="cursor-pointer">
               <span className="guests-label">Children:</span>
               <button
-                className={`guest-decrement ${children < 1 ? "disabled" : ""}`}
+                className={`guest-decrement ${guestChildren < 1 ? "disabled" : ""}`}
                 onClick={() => {
-                  handleDecremenet(children, setChildren);
+                  handleDecremenet(guestChildren, setGuestChildren);
                 }}
               >
                 <MinusIconSVG />
               </button>
-              <span className="guests-number">{children}</span>
+              <span className="guests-number">{guestChildren}</span>
               <button
                 className={`guest-increment`}
                 onClick={() => {
-                  handleIncremenet(children, setChildren);
+                  handleIncremenet(guestChildren, setGuestChildren);
                 }}
               >
                 <PlusIconSVG />

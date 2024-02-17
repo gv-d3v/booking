@@ -28,7 +28,7 @@ const Navbar = () => {
   const [showCalendarDrop, setShowCalendarDrop] = useState("");
 
   const [adults, setAdults] = useState(0);
-  const [children, setChildren] = useState(0);
+  const [guestChildren, setGuestChildren] = useState(0);
   const [pets, setPets] = useState(0);
   const [showGuestDrop, setShowGuestDrop] = useState("");
 
@@ -58,7 +58,7 @@ const Navbar = () => {
   };
   const handleCalendarHide = () => {
     setShowCalendarDrop("");
-    !adults && !children && !pets ? setShowGuestDrop("show") : setShowGuestDrop("");
+    !adults && !guestChildren && !pets ? setShowGuestDrop("show") : setShowGuestDrop("");
   };
 
   //GUESTS
@@ -128,8 +128,8 @@ const Navbar = () => {
     handleGuestsShow: handleGuestsShow,
     adults: adults,
     setAdults: setAdults,
-    children: children,
-    setChildren: setChildren,
+    guestChildren: guestChildren,
+    setGuestChildren: setGuestChildren,
     pets: pets,
     setPets: setPets,
     handleCalendarHide: handleCalendarHide,

@@ -30,8 +30,8 @@ const SearchBar = ({
   handleGuestsShow,
   adults,
   setAdults,
-  children,
-  setChildren,
+  guestChildren,
+  setGuestChildren,
   pets,
   setPets,
   handleCalendarHide,
@@ -77,19 +77,18 @@ const SearchBar = ({
   //HANDLE GUESTS
   const handleGuests = () => {
     const guests = [];
-    if (adults || children || pets) {
-      /*  [ adults ? `${adults} adults` : "", children ? `${children} children` : ""];*/
+    if (adults || guestChildren || pets) {
       if (adults === 1) {
         guests.push(`${adults} adult`);
       }
       if (adults > 1) {
         guests.push(`${adults} adults`);
       }
-      if (children === 1) {
-        guests.push(`${children} child`);
+      if (guestChildren === 1) {
+        guests.push(`${guestChildren} child`);
       }
-      if (children > 1) {
-        guests.push(`${children} children`);
+      if (guestChildren > 1) {
+        guests.push(`${guestChildren} children`);
       }
       if (pets === 1) {
         guests.push(`${pets} pet`);
@@ -164,8 +163,8 @@ const SearchBar = ({
         popupLeft={popupLeft}
         adults={adults}
         setAdults={setAdults}
-        children={children}
-        setChildren={setChildren}
+        guestChildren={guestChildren}
+        setGuestChildren={setGuestChildren}
         pets={pets}
         setPets={setPets}
       />
